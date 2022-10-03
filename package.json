@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.4.0",
+    "bootstrap": "^3.4.1",
     "husky": "^0.14.3",
-    "immer": "^1.9.3",
+    "immer": "^9.0.6",
     "lint-staged": "^7.3.0",
-    "moment": "^2.23.0",
+    "moment": "^2.29.4",
     "prettier": "^1.15.3",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
@@ -19,13 +19,14 @@
     "react-router-breadcrumbs-hoc": "^2.3.1",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.8",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
     "reselect": "^3.0.1",
     "rimraf": "^2.6.2",
     "uuid": "^3.3.2",
-    "validator": "^10.10.0"
+    "validator": "^13.7.0",
+    "@snyk/protect": "latest"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -38,7 +39,9 @@
     "start": "rimraf ./build && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "browserslist": [
     ">0.2%",
@@ -49,5 +52,6 @@
   "devDependencies": {
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1"
-  }
+  },
+  "snyk": true
 }
