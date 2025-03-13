@@ -10,7 +10,7 @@
     "moment": "^2.23.0",
     "prettier": "^1.15.3",
     "react": "^16.7.0",
-    "react-bootstrap": "^0.32.4",
+    "react-bootstrap": "^1.0.0",
     "react-bootstrap-switch": "^15.5.3",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.7.0",
